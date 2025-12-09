@@ -1,4 +1,4 @@
-// --- USERS STORAGE ---
+// Users array
 export const getUsers = () => {
   return JSON.parse(localStorage.getItem("users")) || [];
 };
@@ -7,11 +7,15 @@ export const saveUsers = (users) => {
   localStorage.setItem("users", JSON.stringify(users));
 };
 
-// --- AUTH STORAGE ---
+// Logged-in user
 export const getLoggedInUser = () => {
-  return JSON.parse(localStorage.getItem("loggedInUser")) || null;
+  return JSON.parse(localStorage.getItem("loggedUser")) || null;
 };
 
 export const saveLoggedInUser = (user) => {
-  localStorage.setItem("loggedInUser", JSON.stringify(user));
+  localStorage.setItem("loggedUser", JSON.stringify(user));
+};
+
+export const removeLoggedInUser = () => {
+  localStorage.removeItem("loggedUser");
 };

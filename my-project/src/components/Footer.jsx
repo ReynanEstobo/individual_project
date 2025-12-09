@@ -67,7 +67,7 @@ const Footer = () => {
             <p className="text-gray-400 mb-2">
               Phone:{" "}
               <a href="tel:+15551234567" className="hover:text-white">
-                (+63) 991-389-2842
+                (+63) 991-111-0000
               </a>
             </p>
             <p className="text-gray-400">123 Job Street, Quezon City, 10001</p>
