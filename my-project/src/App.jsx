@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import JobDetails from "./pages/JobDetails";
 import Jobs from "./pages/Jobs";
 import Profile from "./pages/Profile";
+import JobDashboard from "./pages/JobDashboard";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
             <Route path="/job/:id" element={<JobDetails />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/dashboard" element={<JobDashboard />} />
+
           </Routes>
         </main>
       </div>

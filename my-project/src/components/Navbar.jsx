@@ -39,6 +39,7 @@ const Navbar = () => {
 
   const hideAuthButtons = location.pathname === "/auth";
   const isLoggedIn = !!loggedUser;
+  const showProfileLink = loggedUser && location.pathname !== "/profile";
 
   return (
     <nav className="bg-white shadow-md py-4">
@@ -65,15 +66,17 @@ const Navbar = () => {
             Browse Jobs
           </Link>
           <Link
-            to="/companies"
+            to="/"
             className={`text-gray-700 hover:text-blue-600 transition ${
-              location.pathname === "/companies" ? "text-blue-600 font-medium" : ""
+              location.pathname === "/companies"
+                ? "text-blue-600 font-medium"
+                : ""
             }`}
           >
             Companies
           </Link>
           <Link
-            to="/about"
+            to="/"
             className={`text-gray-700 hover:text-blue-600 transition ${
               location.pathname === "/about" ? "text-blue-600 font-medium" : ""
             }`}
@@ -96,6 +99,15 @@ const Navbar = () => {
               {/* Dropdown menu */}
               {dropdownOpen && (
                 <div className="absolute right-0 mt-2 w-36 bg-white border rounded-lg shadow-lg z-50">
+                  {showProfileLink && (
+                    <Link
+                      to="/profile"
+                      className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition"
+                      onClick={() => setDropdownOpen(false)}
+                    >
+                      Profile
+                    </Link>
+                  )}
                   <button
                     onClick={handleLogout}
                     className="w-full text-left px-4 py-2 text-gray-700 hover:bg-red-100 hover:text-red-600 transition"

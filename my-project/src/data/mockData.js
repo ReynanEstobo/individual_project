@@ -129,7 +129,141 @@ export const mockJobs = [
     ],
     website: "https://helpdeskco.com",
   },
-  // Add additional jobs as needed, using locations like Baguio, Iloilo City, Cagayan de Oro, Pasig, or Other
+  // --- New Jobs ---
+  {
+    id: 7,
+    title: "Backend Developer",
+    company: "CloudWare",
+    location: "Baguio",
+    postedDate: "2023-07-01",
+    salary: "₱100,000 - ₱130,000",
+    type: "Full-time",
+    category: "Technology",
+    description:
+      "Looking for a skilled Backend Developer to build scalable APIs and backend systems.",
+    requirements: [
+      "3+ years Node.js experience",
+      "Database knowledge",
+      "API design",
+    ],
+    responsibilities: [
+      "Develop APIs",
+      "Maintain server infrastructure",
+      "Database management",
+    ],
+    website: "https://cloudware.com",
+  },
+  {
+    id: 8,
+    title: "Content Writer",
+    company: "WriteWell",
+    location: "Iloilo City",
+    postedDate: "2023-07-05",
+    salary: "₱20,000 - ₱30,000",
+    type: "Part-time",
+    category: "Marketing",
+    description:
+      "We need a creative Content Writer to produce blog posts, newsletters, and social media content.",
+    requirements: [
+      "Excellent writing skills",
+      "SEO knowledge",
+      "Portfolio required",
+    ],
+    responsibilities: [
+      "Write blog posts",
+      "Manage social media content",
+      "Proofread materials",
+    ],
+    website: "https://writewell.com",
+  },
+  {
+    id: 9,
+    title: "Teacher",
+    company: "BrightFuture Academy",
+    location: "Cagayan de Oro",
+    postedDate: "2023-07-10",
+    salary: "₱25,000 - ₱35,000",
+    type: "Full-time",
+    category: "Education",
+    description:
+      "Seeking an enthusiastic teacher for elementary school students.",
+    requirements: [
+      "Bachelor's in Education",
+      "Teaching license",
+      "Communication skills",
+    ],
+    responsibilities: [
+      "Conduct classes",
+      "Prepare lesson plans",
+      "Assess student performance",
+    ],
+    website: "https://brightfuture.edu",
+  },
+  {
+    id: 10,
+    title: "Sales Executive",
+    company: "SalesForce PH",
+    location: "Pasig",
+    postedDate: "2023-07-12",
+    salary: "₱30,000 - ₱45,000",
+    type: "Full-time",
+    category: "Sales",
+    description:
+      "We are looking for a motivated Sales Executive to drive sales and build client relationships.",
+    requirements: [
+      "2+ years sales experience",
+      "Communication skills",
+      "Target-driven",
+    ],
+    responsibilities: [
+      "Generate leads",
+      "Meet sales targets",
+      "Client follow-up",
+    ],
+    website: "https://salesforceph.com",
+  },
+  {
+    id: 11,
+    title: "Graphic Designer",
+    company: "Creative Minds",
+    location: "Bacolod",
+    postedDate: "2023-07-15",
+    salary: "₱25,000 - ₱40,000",
+    type: "Full-time",
+    category: "Design",
+    description:
+      "Looking for a talented Graphic Designer to create visuals for digital and print media.",
+    requirements: ["Adobe Suite", "Portfolio required", "Creativity"],
+    responsibilities: [
+      "Design graphics",
+      "Collaborate with marketing",
+      "Prepare print materials",
+    ],
+    website: "https://creativeminds.com",
+  },
+  {
+    id: 12,
+    title: "IT Support Specialist",
+    company: "TechHelp",
+    location: "Mandaluyong",
+    postedDate: "2023-07-18",
+    salary: "₱20,000 - ₱28,000",
+    type: "Full-time",
+    category: "Technology",
+    description:
+      "Hiring IT Support Specialists to assist with troubleshooting and technical support.",
+    requirements: [
+      "Technical knowledge",
+      "Problem-solving",
+      "Customer service skills",
+    ],
+    responsibilities: [
+      "Provide IT support",
+      "Troubleshoot issues",
+      "Document solutions",
+    ],
+    website: "https://techhelp.com",
+  },
 ];
 
 export const mockCategories = [
